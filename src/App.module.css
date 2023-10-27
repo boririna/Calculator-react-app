@@ -1,0 +1,113 @@
+.app {
+	text-align: center;
+}
+
+.container {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.clacBody {
+	/* background-image: url('./grey-surface.jpg');
+	background-size: cover; */
+	border: solid 3px rgb(64, 64, 64);
+	border-bottom-color: rgb(0, 0, 0);
+	border-right-color: rgb(0, 0, 0);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgb(119, 119, 119), rgb(73, 73, 73));
+}
+
+.display {
+	padding: 5px;
+	border: solid 3px rgb(88, 88, 88);
+	border-top-color: rgb(0, 0, 0);
+	border-left-color: rgb(0, 0, 0);
+	box-shadow: inset 0px 0px 5px rgb(36, 36, 36);
+	width: 215px;
+	height: 30px;
+	margin-bottom: 10px;
+	text-align: right;
+	text-shadow: 0 0 3px white;
+	font-size: 24px;
+	background-color: #494c53;
+	overflow: hidden;
+}
+
+.result {
+	padding: 5px;
+	border: solid 3px rgb(88, 88, 88);
+	border-top-color: rgb(0, 0, 0);
+	border-left-color: rgb(0, 0, 0);
+	box-shadow: inset 0px 0px 5px rgb(36, 36, 36);
+	width: 215px;
+	height: 30px;
+	margin-bottom: 10px;
+	text-align: right;
+	color: rgb(204, 154, 251);
+	text-shadow: 0 0 3px rgb(195, 195, 248);
+	font-weight: 600;
+	font-size: 24px;
+	background-color: #494c53;
+	overflow: hidden;
+}
+
+.buttons {
+	display: flex;
+	width: 245px;
+}
+
+.operators {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons button {
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	font-size: 30px;
+	background-color: rgb(255, 250, 113);
+	box-shadow:
+		inset 0px 0px 15px rgb(73, 73, 72),
+		0px 0px 0px 1px rgb(24, 24, 24);
+	border-width: 3px;
+}
+
+.buttons button:active {
+	background-color: rgb(217, 217, 96);
+	font-size: 29px;
+}
+
+.operators button {
+	background-color: rgb(18, 225, 225);
+}
+
+.operators button:active {
+	background-color: rgb(29, 192, 192);
+}
+
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.numbers button {
+	width: 31%;
+}
+
+button:last-child {
+	width: 97.5%;
+}
+
+.operators button:last-child {
+	width: 93%;
+}
