@@ -25,6 +25,12 @@ export const App = () => {
 			setOperand2(operand2 + element);
 		}
 
+		if (NUMS.includes(element) && isResult === true) {
+			setOperand1(element);
+			setOperand2('');
+			setOperator('');
+		}
+
 		if (element === '=') {
 			if (operand2 !== '' && operator === '+') {
 				setIsResult(true);
