@@ -56,7 +56,6 @@ export const App = () => {
 	return (
 		<div className={styles.app}>
 			<header className={styles.container}>
-				{/* <h1>Калькулятор</h1> */}
 				<div className={styles.clacBody}>
 					<div className={isResult ? styles.result : styles.display}>
 						<span>{operand1 === '' ? '0' : operand1}</span>
@@ -67,38 +66,17 @@ export const App = () => {
 						<div className={styles.numbers}>
 							{NUMS.map((num, index) => {
 								return (
-									<button
-										key={index}
-										onClick={(event) =>
-											handleClick(event.target.innerHTML)
-										}
-									>
+									<button key={index} onClick={() => handleClick(num)}>
 										{num}
 									</button>
 								);
 							})}
 						</div>
 						<div className={styles.operators}>
-							<button
-								onClick={(event) => handleClick(event.target.innerHTML)}
-							>
-								+
-							</button>
-							<button
-								onClick={(event) => handleClick(event.target.innerHTML)}
-							>
-								-
-							</button>
-							<button
-								onClick={(event) => handleClick(event.target.innerHTML)}
-							>
-								=
-							</button>
-							<button
-								onClick={(event) => handleClick(event.target.innerHTML)}
-							>
-								C
-							</button>
+							<button onClick={() => handleClick('+')}>+</button>
+							<button onClick={() => handleClick('-')}>-</button>
+							<button onClick={() => handleClick('=')}>=</button>
+							<button onClick={() => handleClick('C')}>C</button>
 						</div>
 					</div>
 				</div>

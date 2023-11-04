@@ -62,7 +62,7 @@
 
 .buttons {
 	display: flex;
-	width: 245px;
+	max-width: 245px;
 }
 
 .operators {
